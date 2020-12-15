@@ -1,0 +1,523 @@
+body {
+    margin: 80px;
+    background: #F4F4EF;
+}
+
+.wrapper {
+    margin: 50px 0;
+}
+
+/*header style*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    padding: 0 80px;
+    height: 80px;
+    z-index: 9999;
+}
+
+header p {
+    font-family: 'Puritan', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+}
+
+header ul {
+    display: flex;
+    position: relative;
+    left: -160px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    color: black;
+    margin: 0 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+}
+
+header ul li a:last-child {
+    margin-right: 0;
+}
+/*End of header style*/
+
+/*contact button style*/
+.contact {
+    width: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:100vh;
+    background-color: white;
+    z-index: 9999;
+}
+
+.contact .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.contact img {
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact p a {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+    transform: rotate(-90deg);
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+/*End of contact button style*/
+
+/*Social media style*/
+.social {
+    width: 80px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: white;
+}
+
+.social .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.social img {
+    width: 40px;
+    height: 30px;
+}
+
+.social img:first-child {
+    margin-bottom: 25px;
+}
+/*End of social media style*/
+
+/*landing page's title style*/
+.title {
+    width: 560px;
+    margin: 290px auto;
+}
+
+.title h1 {
+    font-family: 'Futura', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    right: -157px;
+    top: -20px;
+    font-size: 70px;
+    letter-spacing: 20px;
+    color: #8E857E;
+}
+
+.title-content {
+    background-color: white;
+    width: 330px;
+    height: 330px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 4px 4px 6px #00000038;
+
+}
+
+.title p {
+    font-family: 'Roboto', sans-serif;
+    color: #8E857E;
+    text-transform: uppercase;
+    position: absolute;
+    left: -80px;
+    top: 125px;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.title span {
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+/*End of landing page's title style*/
+
+/*1st project style*/
+.projects {
+    height: 100vh;
+    position: relative;
+}
+
+.projects .visual img {
+    max-width: 110%;
+    margin-left: -85px;
+    margin-top: 185px;
+}
+
+.projects .description {
+    width: calc(50% - 45px);
+    padding-left: 45px;
+    position: relative;
+    top: 150px;
+}
+
+.projects .toxic .visual {
+    background: #CE8272;
+    width: 50%;
+    position: relative;
+}
+
+/*pagination of 1st project style*/
+.toxic .numerotation {
+    position: absolute;
+    right: 0;
+    display: flex;
+    color: white;
+}
+
+.toxic .numerotation ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+.toxic .numerotation ul li {
+    padding-left: 150px;
+    padding-right: 15px;
+}
+
+.toxic .numerotation ul li:first-child {
+    border-bottom: 1px solid white;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+.toxic .numerotation ul li:last-child {
+    padding-top: 2px;
+}
+
+.toxic .numerotation p {
+    margin-right: 8px;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 18px;
+}
+/*End of pagination of 1st project style*/
+
+.scroll {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.toxic {
+    display: flex;
+    height: 100%;
+}
+
+.toxic .scroll:before {
+    content: '';
+    width: 1px;
+    height: 200px;
+    background: #000;
+    display: block;
+}
+
+.toxic .scroll p {
+    transform:rotate(90deg);
+    position: absolute;
+    top: -7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.toxic h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.toxic h2:after {
+    content:'';
+    height:3px;
+    width:100px;
+    background: #000;
+    display: block;
+    margin-top: 40px;
+}
+
+.toxic .description p {
+    width: 390px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 125%;
+    letter-spacing: .5px;
+    margin-bottom: 50px;
+
+}
+
+/*Button style*/
+.description a {
+    text-decoration: none;
+    color: #8E857E;
+    border: 1px solid;
+    font-family: 'Barlow', sans-serif;
+    padding: 10px 12px;
+}
+/*End of button style*/
+
+.toxic .description ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+    margin: -17px 213px 0px 0px;;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+}
+
+.description ul:after {
+    content: '';
+    height: 1px;
+    width: 600px;
+    background: #000;
+    display: block;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 1;
+}
+
+.description ul li {
+    margin-bottom: 20px;
+}
+
+.description ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.description ul li span {
+    color: #CE8272;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/*2nd project style*/
+.kitandco {
+    display: flex;
+    height: 100%;
+}
+
+/*pagination of 2nd project style*/
+.kitandco .numerotation {
+    position: absolute;
+    left: 0;
+    display: flex;
+    color: white;
+}
+
+.kitandco .numerotation ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+.kitandco .numerotation ul li {
+    padding-right: 150px;
+    padding-left: 15px;
+}
+
+.kitandco .numerotation ul li:first-child {
+    border-bottom: 1px solid white;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+.kitandco .numerotation ul li:last-child {
+    padding-top: 2px;
+}
+
+.kitandco .numerotation p {
+    margin-left: 8px;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 18px;
+}
+/*End of pagination of 2nd project style*/
+
+.projects .kitandco .visual {
+    background: #878F80;
+    width: 50%;
+}
+
+.kitandco .scroll:before {
+    content: '';
+    width: 1px;
+    height: 200px;
+    background: #000;
+    display: block;
+}
+
+.kitandco .scroll p {
+    transform:rotate(90deg);
+    position: absolute;
+    top: -7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.kitandco h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.kitandco h2:after {
+    content:'';
+    height:3px;
+    width:100px;
+    background: #000;
+    display: block;
+    margin-top: 40px;
+}
+
+.projects .kitandco .description {
+    width: calc(45% - 45px);
+    position: relative;
+    top: 140px;
+    left: 120px;
+}
+
+.kitandco .description p {
+    width: 390px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 125%;
+    letter-spacing: .5px;
+    margin-bottom: 50px;
+
+}
+
+.projects .kitandco .visual img {
+    max-width: 110%;
+    margin-left: 21px;
+    margin-top: 185px;
+}
+
+.kitandco .description ul
+{
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+}
+
+    .kitandco .description a {
+    position: relative;
+    left: 165px;
+}
+
+.kitandco .description ul:after {
+    content: '';
+    height: 1px;
+    width: 535px;
+    background: #000;
+    display: block;
+    margin-top: 30px;
+    position: absolute;
+    right: 0;
+}
+/*End of 2nd project style*/
+
+/*Personal projects style*/
+.realisations {
+    height: 100vh;
+}
+
+.realisations .content {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px
+}
+
+.realisations .content .column {
+    margin: 0 20px;
+    flex: 1;
+}
+
+.realisations .title {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+
+.realisations .title h2 {
+    font-size: 80px;
+    margin: 0;
+}
+
+.realisations .content .column img {
+    width: 100%;
+}
+
+.realisations .title h2:last-child{
+    background-color: #8E857E;
+    height: 100vh;
+    width: 50%;
+    position: relative;
+}
+
+.realisations .visual-content ul {
+    list-style: none;
+    font-family: 'Barlow', sans-serif;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.realisations .visual-content ul li {
+    margin-bottom: 3px;
+}
+
+.realisations .visual-content ul li span {
+    position: relative;
+    top: -200px;
+}
+
+.realisations .visual-content ul li span:before {
+    content: '';
+    width: 3px;
+    height: 447px;
+    background: #000;
+    display: block;
+    position: relative;
+    left: -10px;
+    top: -237px;
+}
+
+.realisations .visual-content ul li:first-child {
+    font-weight: 600;
+}
+/*End of personal projects style*/
