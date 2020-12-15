@@ -455,6 +455,7 @@ header ul li a:last-child {
 /*Personal projects style*/
 .realisations {
     height: 100vh;
+    position: relative;
 }
 
 .realisations .content {
@@ -472,6 +473,22 @@ header ul li a:last-child {
     display: flex;
     justify-content: space-between;
     margin: 100px auto;
+    width: 100%;
+}
+
+.realisations .title h2:first-child {
+    margin-left: 50px;
+    position: relative;
+}
+
+.realisations .title > h2:first-child:before {
+    content: '';
+    height: 1px;
+    width: 300px;
+    background: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
 }
 
 .realisations .title h2 {
@@ -479,15 +496,34 @@ header ul li a:last-child {
     margin: 0;
 }
 
-.realisations .content .column img {
-    width: 100%;
+.realisations .second-part-title {
+    width: 50%;
+    height: 100vh;
+    background: #8E857E;
+    position: absolute;
+    right: 0;
+    z-index: -1;
 }
 
-.realisations .title h2:last-child{
-    background-color: #8E857E;
-    height: 100vh;
-    width: 50%;
+.realisations .second-part-title h2 {
+    float:right;
+    margin-right: 50px;
     position: relative;
+    color: #fff;
+}
+
+.realisations .second-part-title h2:before {
+    content: '';
+    height: 1px;
+    width: 360px;
+    background: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: -400px;
+}
+
+.realisations .content .column img {
+    width: 100%;
 }
 
 .realisations .visual-content ul {
@@ -501,20 +537,26 @@ header ul li a:last-child {
     margin-bottom: 3px;
 }
 
-.realisations .visual-content ul li span {
+.realisations .column {
     position: relative;
-    top: -200px;
 }
 
-.realisations .visual-content ul li span:before {
+.realisations .column:before {
     content: '';
     width: 3px;
     height: 447px;
     background: #000;
-    display: block;
-    position: relative;
-    left: -10px;
-    top: -237px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+
+.realisations .column:nth-child(2) {
+    margin-top: 70px;
+}
+
+.realisations .column:nth-child(3) {
+    margin-top: 140px;
 }
 
 .realisations .visual-content ul li:first-child {
